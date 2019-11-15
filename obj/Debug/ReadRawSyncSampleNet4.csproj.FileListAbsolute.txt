@@ -1,0 +1,33 @@
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\bin\Debug\CSReadRawSyncSampleNet4.exe
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\bin\Debug\CSReadRawSyncSampleNet4.pdb
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\bin\Debug\OpcHDAWrapper.Net4.dll
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\bin\Debug\OpcHDAWrapper.Net4.xml
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\obj\Debug\ReadRawSyncSample.Form1.resources
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\obj\Debug\ReadRawSyncSampleNet4.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\obj\Debug\CSReadRawSyncSampleNet4.exe
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\obj\Debug\CSReadRawSyncSampleNet4.pdb
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\obj\Debug\ReadRawSyncSampleNet4.csprojResolveAssemblyReference.cache
+D:\Ewen\repo\advosol-csv\obj\Debug\CSReadRawSyncSampleNet4.exe
+D:\Ewen\repo\advosol-csv\obj\Debug\CSReadRawSyncSampleNet4.pdb
+D:\Ewen\repo\advosol-csv\bin\Debug\CSReadRawSyncSampleNet4.exe
+D:\Ewen\repo\advosol-csv\bin\Debug\CSReadRawSyncSampleNet4.pdb
+D:\Ewen\repo\advosol-csv\bin\Debug\OpcHDAWrapper.Net4.xml
+D:\Ewen\repo\advosol-csv\obj\Debug\ReadRawSyncSampleNet4.csprojResolveAssemblyReference.cache
+D:\Ewen\repo\advosol-csv\obj\Debug\ReadRawSyncSample.Form1.resources
+D:\Ewen\repo\advosol-csv\obj\Debug\ReadRawSyncSampleNet4.csproj.GenerateResource.Cache
+C:\Users\tim\Desktop\advosol-csv\obj\Debug\CSReadRawSyncSampleNet4.exe
+C:\Users\tim\Desktop\advosol-csv\obj\Debug\CSReadRawSyncSampleNet4.pdb
+C:\Users\tim\Desktop\advosol-csv\bin\Debug\CSReadRawSyncSampleNet4.exe
+C:\Users\tim\Desktop\advosol-csv\bin\Debug\CSReadRawSyncSampleNet4.pdb
+C:\Users\tim\Desktop\advosol-csv\bin\Debug\OpcHDAWrapper.Net4.xml
+C:\Users\tim\Desktop\advosol-csv\obj\Debug\ReadRawSyncSampleNet4.csprojResolveAssemblyReference.cache
+C:\Users\tim\Desktop\advosol-csv\obj\Debug\ReadRawSyncSample.Form1.resources
+C:\Users\tim\Desktop\advosol-csv\obj\Debug\ReadRawSyncSampleNet4.csproj.GenerateResource.Cache
+C:\Users\tim\Desktop\advosol-csv_Tim+Joe\obj\Debug\CSReadRawSyncSampleNet4.exe
+C:\Users\tim\Desktop\advosol-csv_Tim+Joe\obj\Debug\CSReadRawSyncSampleNet4.pdb
+C:\Users\tim\Desktop\advosol-csv_Tim+Joe\bin\Debug\CSReadRawSyncSampleNet4.exe
+C:\Users\tim\Desktop\advosol-csv_Tim+Joe\bin\Debug\CSReadRawSyncSampleNet4.pdb
+C:\Users\tim\Desktop\advosol-csv_Tim+Joe\bin\Debug\OpcHDAWrapper.Net4.xml
+C:\Users\tim\Desktop\advosol-csv_Tim+Joe\obj\Debug\ReadRawSyncSampleNet4.csprojResolveAssemblyReference.cache
+C:\Users\tim\Desktop\advosol-csv_Tim+Joe\obj\Debug\ReadRawSyncSample.Form1.resources
+C:\Users\tim\Desktop\advosol-csv_Tim+Joe\obj\Debug\ReadRawSyncSampleNet4.csproj.GenerateResource.Cache

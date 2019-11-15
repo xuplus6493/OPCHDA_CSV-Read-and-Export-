@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\bin\x86\Debug\CSReadRawSyncSampleNet4.exe
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\bin\x86\Debug\CSReadRawSyncSampleNet4.pdb
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\bin\x86\Debug\OpcHDAWrapper.Net4.dll
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\bin\x86\Debug\OpcHDAWrapper.Net4.xml
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\obj\x86\Debug\ReadRawSyncSampleNet4.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\obj\x86\Debug\ReadRawSyncSample.Form1.resources
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\obj\x86\Debug\ReadRawSyncSampleNet4.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\obj\x86\Debug\CSReadRawSyncSampleNet4.exe
+C:\Program Files (x86)\Advosol\OPCHDA.NET Client Component Evaluation\Sample Clients C#\ReadRawSync\obj\x86\Debug\CSReadRawSyncSampleNet4.pdb

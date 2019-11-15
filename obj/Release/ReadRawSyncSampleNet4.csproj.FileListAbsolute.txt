@@ -1,0 +1,6 @@
+D:\Ewen\repo\advosol-csv\obj\Release\ReadRawSyncSample.Form1.resources
+D:\Ewen\repo\advosol-csv\obj\Release\ReadRawSyncSampleNet4.csproj.GenerateResource.Cache
+D:\Ewen\repo\advosol-csv\bin\Release\CSReadRawSyncSampleNet4.exe
+D:\Ewen\repo\advosol-csv\bin\Release\OpcHDAWrapper.Net4.xml
+D:\Ewen\repo\advosol-csv\obj\Release\ReadRawSyncSampleNet4.csprojResolveAssemblyReference.cache
+D:\Ewen\repo\advosol-csv\obj\Release\CSReadRawSyncSampleNet4.exe
