@@ -72,6 +72,12 @@ namespace ReadRawSyncSample
         private System.Windows.Forms.TextBox tbStatus;
         private System.Windows.Forms.TextBox tbValues;
         private NumericUpDown timeInterval;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button5;
+        private Button button4;
+        private Button button6;
         private System.Windows.Forms.TreeView tvServer;
 
         public Form1()
@@ -140,6 +146,12 @@ namespace ReadRawSyncSample
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnReset = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -166,49 +178,49 @@ namespace ReadRawSyncSample
             this.panel2.SuspendLayout();
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
-            //
+            // 
             // btnBrowseOPCServers
-            //
+            // 
             this.btnBrowseOPCServers.Location = new System.Drawing.Point(3, 3);
             this.btnBrowseOPCServers.Name = "btnBrowseOPCServers";
             this.btnBrowseOPCServers.Size = new System.Drawing.Size(102, 28);
             this.btnBrowseOPCServers.TabIndex = 0;
             this.btnBrowseOPCServers.Text = "瀏覽HDA Servers";
             this.btnBrowseOPCServers.Click += new System.EventHandler(this.btnBrowseOPCServers_Click);
-            //
+            // 
             // cbOPCServers
-            //
+            // 
             this.cbOPCServers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbOPCServers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
             this.cbOPCServers.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbOPCServers.Location = new System.Drawing.Point(0, 0);
             this.cbOPCServers.Name = "cbOPCServers";
-            this.cbOPCServers.Size = new System.Drawing.Size(226, 286);
+            this.cbOPCServers.Size = new System.Drawing.Size(268, 286);
             this.cbOPCServers.Sorted = true;
             this.cbOPCServers.TabIndex = 2;
-            //
+            // 
             // tvServer
-            //
+            // 
             this.tvServer.CheckBoxes = true;
             this.tvServer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvServer.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tvServer.Location = new System.Drawing.Point(0, 0);
             this.tvServer.Name = "tvServer";
             this.tvServer.PathSeparator = ".";
-            this.tvServer.Size = new System.Drawing.Size(139, 347);
+            this.tvServer.Size = new System.Drawing.Size(166, 347);
             this.tvServer.TabIndex = 4;
-            //
+            // 
             // btnConnect
-            //
+            // 
             this.btnConnect.Location = new System.Drawing.Point(111, 3);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(52, 28);
             this.btnConnect.TabIndex = 5;
             this.btnConnect.Text = "連線";
             this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
-            //
+            // 
             // btnDisconnect
-            //
+            // 
             this.btnDisconnect.Enabled = false;
             this.btnDisconnect.Location = new System.Drawing.Point(169, 3);
             this.btnDisconnect.Name = "btnDisconnect";
@@ -216,34 +228,35 @@ namespace ReadRawSyncSample
             this.btnDisconnect.TabIndex = 6;
             this.btnDisconnect.Text = "離線";
             this.btnDisconnect.Click += new System.EventHandler(this.btnDisconnect_Click);
-            //
+            // 
             // tbStatus
-            //
+            // 
             this.tbStatus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbStatus.Location = new System.Drawing.Point(0, 0);
             this.tbStatus.Name = "tbStatus";
             this.tbStatus.ReadOnly = true;
-            this.tbStatus.Size = new System.Drawing.Size(744, 22);
+            this.tbStatus.Size = new System.Drawing.Size(903, 22);
             this.tbStatus.TabIndex = 7;
-            //
+            this.tbStatus.TextChanged += new System.EventHandler(this.tbStatus_TextChanged);
+            // 
             // cbHostName
-            //
+            // 
             this.cbHostName.Location = new System.Drawing.Point(3, 21);
             this.cbHostName.Name = "cbHostName";
             this.cbHostName.Size = new System.Drawing.Size(142, 20);
             this.cbHostName.TabIndex = 21;
-            //
+            // 
             // btnRead
-            //
-            this.btnRead.Location = new System.Drawing.Point(19, 53);
+            // 
+            this.btnRead.Location = new System.Drawing.Point(19, 55);
             this.btnRead.Name = "btnRead";
             this.btnRead.Size = new System.Drawing.Size(128, 27);
             this.btnRead.TabIndex = 23;
             this.btnRead.Text = "讀取所有選擇項目";
             this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
-            //
+            // 
             // tbValues
-            //
+            // 
             this.tableLayoutPanel1.SetColumnSpan(this.tbValues, 2);
             this.tbValues.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbValues.Location = new System.Drawing.Point(3, 191);
@@ -254,9 +267,9 @@ namespace ReadRawSyncSample
             this.tbValues.Size = new System.Drawing.Size(363, 176);
             this.tbValues.TabIndex = 28;
             this.tbValues.WordWrap = false;
-            //
+            // 
             // btn_export
-            //
+            // 
             this.btn_export.Location = new System.Drawing.Point(6, 53);
             this.btn_export.Name = "btn_export";
             this.btn_export.Size = new System.Drawing.Size(157, 27);
@@ -264,27 +277,27 @@ namespace ReadRawSyncSample
             this.btn_export.Text = "匯出 csv";
             this.btn_export.UseVisualStyleBackColor = true;
             this.btn_export.Click += new System.EventHandler(this.btn_export_Click);
-            //
+            // 
             // label2
-            //
+            // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(4, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 12);
             this.label2.TabIndex = 32;
             this.label2.Text = "時間間隔(秒)";
-            //
+            // 
             // label4
-            //
+            // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(174, 28);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(11, 12);
             this.label4.TabIndex = 34;
             this.label4.Text = "~";
-            //
+            // 
             // groupBox1
-            //
+            // 
             this.groupBox1.Controls.Add(this.btnRead);
             this.groupBox1.Controls.Add(this.chkBounds);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -294,17 +307,17 @@ namespace ReadRawSyncSample
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "項目讀取";
-            //
+            // 
             // chkBounds
-            //
+            // 
             this.chkBounds.Location = new System.Drawing.Point(19, 29);
             this.chkBounds.Name = "chkBounds";
             this.chkBounds.Size = new System.Drawing.Size(78, 18);
             this.chkBounds.TabIndex = 29;
             this.chkBounds.Text = "Bounds";
-            //
+            // 
             // groupBox2
-            //
+            // 
             this.groupBox2.Controls.Add(this.timeInterval);
             this.groupBox2.Controls.Add(this.btn_export);
             this.groupBox2.Controls.Add(this.label2);
@@ -315,9 +328,9 @@ namespace ReadRawSyncSample
             this.groupBox2.TabIndex = 40;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "匯出";
-            //
+            // 
             // timeInterval
-            //
+            // 
             this.timeInterval.Location = new System.Drawing.Point(83, 25);
             this.timeInterval.Maximum = new decimal(new int[] {
             36400,
@@ -333,39 +346,39 @@ namespace ReadRawSyncSample
             this.timeInterval.Size = new System.Drawing.Size(80, 22);
             this.timeInterval.TabIndex = 33;
             this.timeInterval.Value = new decimal(new int[] {
-            30,
+            10,
             0,
             0,
             0});
-            //
+            // 
             // label3
-            //
+            // 
             this.label3.Location = new System.Drawing.Point(108, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 10);
             this.label3.TabIndex = 42;
             this.label3.Text = "Number of Values";
-            //
+            // 
             // dtp_startTime
-            //
+            // 
             this.dtp_startTime.CustomFormat = "MM/dd/yyyy hh:mm:s tt";
             this.dtp_startTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtp_startTime.Location = new System.Drawing.Point(24, 21);
             this.dtp_startTime.Name = "dtp_startTime";
             this.dtp_startTime.Size = new System.Drawing.Size(160, 22);
             this.dtp_startTime.TabIndex = 43;
-            //
+            // 
             // dtp_stopTime
-            //
+            // 
             this.dtp_stopTime.CustomFormat = "MM/dd/yyyy hh:mm:s tt";
             this.dtp_stopTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtp_stopTime.Location = new System.Drawing.Point(191, 21);
             this.dtp_stopTime.Name = "dtp_stopTime";
             this.dtp_stopTime.Size = new System.Drawing.Size(162, 22);
             this.dtp_stopTime.TabIndex = 44;
-            //
+            // 
             // nup_numValues
-            //
+            // 
             this.nup_numValues.Location = new System.Drawing.Point(24, 63);
             this.nup_numValues.Maximum = new decimal(new int[] {
             9999,
@@ -385,117 +398,185 @@ namespace ReadRawSyncSample
             0,
             0,
             0});
-            //
+            // 
             // ckbBrowseAllInitially
-            //
+            // 
             this.ckbBrowseAllInitially.Location = new System.Drawing.Point(151, 16);
             this.ckbBrowseAllInitially.Name = "ckbBrowseAllInitially";
             this.ckbBrowseAllInitially.Size = new System.Drawing.Size(72, 27);
             this.ckbBrowseAllInitially.TabIndex = 20;
             this.ckbBrowseAllInitially.Text = "全初始化";
-            //
+            // 
             // mainSplit
-            //
+            // 
             this.mainSplit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainSplit.Location = new System.Drawing.Point(0, 0);
             this.mainSplit.Name = "mainSplit";
-            //
+            // 
             // mainSplit.Panel1
-            //
+            // 
             this.mainSplit.Panel1.Controls.Add(this.panel1);
             this.mainSplit.Panel1.Controls.Add(this.groupBox3);
             this.mainSplit.Panel1.Controls.Add(this.flowLayoutPanel1);
-            //
+            // 
             // mainSplit.Panel2
-            //
+            // 
             this.mainSplit.Panel2.Controls.Add(this.secondSplit);
-            this.mainSplit.Size = new System.Drawing.Size(744, 370);
-            this.mainSplit.SplitterDistance = 226;
+            this.mainSplit.Size = new System.Drawing.Size(903, 370);
+            this.mainSplit.SplitterDistance = 268;
             this.mainSplit.SplitterWidth = 6;
             this.mainSplit.TabIndex = 46;
-            //
+            // 
             // panel1
-            //
+            // 
             this.panel1.Controls.Add(this.cbOPCServers);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 49);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(226, 286);
+            this.panel1.Size = new System.Drawing.Size(268, 286);
             this.panel1.TabIndex = 2;
-            //
+            // 
             // groupBox3
-            //
+            // 
             this.groupBox3.Controls.Add(this.cbHostName);
             this.groupBox3.Controls.Add(this.ckbBrowseAllInitially);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(226, 49);
+            this.groupBox3.Size = new System.Drawing.Size(268, 49);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Host";
-            //
+            // 
             // flowLayoutPanel1
-            //
+            // 
             this.flowLayoutPanel1.Controls.Add(this.btnBrowseOPCServers);
             this.flowLayoutPanel1.Controls.Add(this.btnConnect);
             this.flowLayoutPanel1.Controls.Add(this.btnDisconnect);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 335);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(226, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(268, 35);
             this.flowLayoutPanel1.TabIndex = 0;
-            //
+            // 
             // secondSplit
-            //
+            // 
             this.secondSplit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.secondSplit.Enabled = false;
             this.secondSplit.Location = new System.Drawing.Point(0, 0);
             this.secondSplit.Name = "secondSplit";
-            //
+            // 
             // secondSplit.Panel1
-            //
+            // 
             this.secondSplit.Panel1.Controls.Add(this.panel4);
             this.secondSplit.Panel1.Controls.Add(this.panel3);
-            //
+            // 
             // secondSplit.Panel2
-            //
+            // 
+            this.secondSplit.Panel2.Controls.Add(this.button6);
+            this.secondSplit.Panel2.Controls.Add(this.button5);
+            this.secondSplit.Panel2.Controls.Add(this.button4);
+            this.secondSplit.Panel2.Controls.Add(this.button3);
+            this.secondSplit.Panel2.Controls.Add(this.button2);
+            this.secondSplit.Panel2.Controls.Add(this.button1);
             this.secondSplit.Panel2.Controls.Add(this.tableLayoutPanel1);
-            this.secondSplit.Size = new System.Drawing.Size(512, 370);
-            this.secondSplit.SplitterDistance = 139;
+            this.secondSplit.Size = new System.Drawing.Size(629, 370);
+            this.secondSplit.SplitterDistance = 166;
             this.secondSplit.TabIndex = 0;
-            //
+            // 
             // panel4
-            //
+            // 
             this.panel4.Controls.Add(this.tvServer);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 23);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(139, 347);
+            this.panel4.Size = new System.Drawing.Size(166, 347);
             this.panel4.TabIndex = 7;
-            //
+            // 
             // panel3
-            //
+            // 
             this.panel3.Controls.Add(this.btnReset);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(139, 23);
+            this.panel3.Size = new System.Drawing.Size(166, 23);
             this.panel3.TabIndex = 6;
-            //
+            // 
             // btnReset
-            //
+            // 
             this.btnReset.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnReset.Location = new System.Drawing.Point(0, 0);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(139, 23);
+            this.btnReset.Size = new System.Drawing.Size(166, 23);
             this.btnReset.TabIndex = 5;
             this.btnReset.Text = "重新整理";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            //
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(380, 326);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(67, 27);
+            this.button6.TabIndex = 36;
+            this.button6.Text = "TimAvg.";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(380, 293);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(67, 27);
+            this.button5.TabIndex = 35;
+            this.button5.Text = "Inter.";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(380, 260);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(67, 27);
+            this.button4.TabIndex = 34;
+            this.button4.Text = "Total";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.button3.Location = new System.Drawing.Point(380, 227);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(67, 27);
+            this.button3.TabIndex = 33;
+            this.button3.Text = "Min";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(380, 194);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(67, 27);
+            this.button2.TabIndex = 32;
+            this.button2.Text = "Max";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(380, 161);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(67, 27);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "Avg.";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // tableLayoutPanel1
-            //
+            // 
+            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -503,18 +584,17 @@ namespace ReadRawSyncSample
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.groupBox2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.groupBox4, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(369, 370);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(369, 367);
             this.tableLayoutPanel1.TabIndex = 0;
-            //
+            // 
             // groupBox4
-            //
+            // 
             this.tableLayoutPanel1.SetColumnSpan(this.groupBox4, 2);
             this.groupBox4.Controls.Add(this.dtp_startTime);
             this.groupBox4.Controls.Add(this.label4);
@@ -528,29 +608,29 @@ namespace ReadRawSyncSample
             this.groupBox4.TabIndex = 41;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "時間間隔";
-            //
+            // 
             // panel2
-            //
+            // 
             this.panel2.Controls.Add(this.tbStatus);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 370);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(744, 21);
+            this.panel2.Size = new System.Drawing.Size(903, 21);
             this.panel2.TabIndex = 47;
-            //
+            // 
             // mainPanel
-            //
+            // 
             this.mainPanel.Controls.Add(this.mainSplit);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(744, 370);
+            this.mainPanel.Size = new System.Drawing.Size(903, 370);
             this.mainPanel.TabIndex = 48;
-            //
+            // 
             // Form1
-            //
+            // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 15);
-            this.ClientSize = new System.Drawing.Size(744, 391);
+            this.ClientSize = new System.Drawing.Size(903, 391);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.panel2);
             this.MinimumSize = new System.Drawing.Size(760, 430);
@@ -583,6 +663,7 @@ namespace ReadRawSyncSample
             this.panel2.PerformLayout();
             this.mainPanel.ResumeLayout(false);
             this.ResumeLayout(false);
+
         }
 
         #endregion Windows Form Designer generated code
@@ -595,6 +676,7 @@ namespace ReadRawSyncSample
             startTime.Time = Convert.ToDateTime(dtp_startTime.Value).AddHours(-8);
             OPCHDAtime stopTime = new OPCHDAtime();     // stop time
             stopTime.Time = Convert.ToDateTime(dtp_stopTime.Value).AddHours(-8);
+
             int numValues = Convert.ToInt32(nup_numValues.Value);
 
             int dtResult = DateTime.Compare(startTime.Time, stopTime.Time);
@@ -827,6 +909,7 @@ namespace ReadRawSyncSample
             startTime.Time = Convert.ToDateTime(dtp_startTime.Value).AddHours(-8);
             OPCHDAtime stopTime = new OPCHDAtime();     // stop time
             stopTime.Time = Convert.ToDateTime(dtp_stopTime.Value).AddHours(-8);
+
             int numValues = Convert.ToInt32(nup_numValues.Value);
 
             int dtResult = DateTime.Compare(startTime.Time, stopTime.Time);
@@ -928,6 +1011,10 @@ namespace ReadRawSyncSample
                 {
                     foreach (TreeNode childtn in tn.Nodes)
                     {
+                        if (childtn.Checked && childtn.Nodes.Count == 0)
+                        {
+                            tnc.Add(childtn);
+                        }
                         collectChkNodes(ref tnc, childtn.Nodes);
                     }
                 }
@@ -973,5 +1060,186 @@ namespace ReadRawSyncSample
             tbStatus.Text = "(Server Shutdown Callback)" + "已中斷與HDA Server連線，原因: " + e.shutdownReason;
             ConnectSwitch(true);
         }
+
+        private void tbStatus_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            readP(3);
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            readP(9);
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            readP(7);
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            readP(2);
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            readP(1);
+        }
+        private void button6_Click(object sender, EventArgs e)
+        {
+            readP(4);
+        }
+
+        public void readP(int aggr)
+        {
+            tbStatus.Text = "開始進行匯出作業....";
+
+            OPCHDAtime startTime = new OPCHDAtime();     // start time
+            startTime.Time = Convert.ToDateTime(dtp_startTime.Value).AddHours(-8);
+            OPCHDAtime stopTime = new OPCHDAtime();     // stop time
+            stopTime.Time = Convert.ToDateTime(dtp_stopTime.Value).AddHours(-8);
+
+
+            int dtResult = DateTime.Compare(startTime.Time, stopTime.Time);
+            if (dtResult == 0)
+            {
+                tbStatus.Text = "開始時間與結束時間相同";
+            }
+            else if (dtResult > 0)
+            {
+                tbStatus.Text = "結束時間不得早於開始時間";
+            }
+            else if (stopTime.Time > DateTime.Now)
+            {
+                tbStatus.Text = "結束時間不得晚於當前時間";
+            }
+            else
+            {
+                //項目清單
+                List<TreeNode> nodes = new List<TreeNode>();
+                collectChkNodes(ref nodes, tvServer.Nodes);
+
+                //無項目
+                if (nodes.Count == 0)
+                {
+                    tbStatus.Text = "無選取項目";
+                    return;
+                }
+                else
+                {
+                    tbStatus.Text = "指定檔案路徑";
+
+                    //存檔
+                    SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                    saveFileDialog1.Filter = "csv(*.csv) | *.csv | 所有檔案(*.*) | *.* ";
+                    saveFileDialog1.Title = "csv匯出";
+                    saveFileDialog1.ShowDialog();
+                    string strFilePath = saveFileDialog1.FileName.ToString();
+                    if (saveFileDialog1.FileName != "")
+                    {
+                        tbStatus.Text = "csv匯出中，請稍候....";
+                        System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile();
+                        System.IO.FileInfo FileAttribute = new FileInfo(strFilePath);
+                        FileAttribute.Attributes = FileAttributes.Normal;
+                        StreamWriter sw = new StreamWriter(fs, System.Text.Encoding.Default);
+
+                        //欄位建立
+                        sw.Write("Timestamp,");
+                        foreach (TreeNode node in nodes)
+                        {
+                            sw.Write(node.FullPath.ToString() + ",");
+                        }
+                        sw.Write("\n");
+
+                        //HDA Read環境建置
+                        string[] items = new string[nodes.Count];
+                        int[] clientHandles = new int[nodes.Count];
+                        int[] serverHandles;
+                        int[] err;
+
+                        int idx = 0;
+                        foreach (TreeNode tn in nodes)
+                        {
+                            items[idx] = tn.FullPath;
+                            clientHandles[idx] = idx;
+                            idx++;
+                        }
+
+                        //Handle取得
+                        int rtc = OpcSrv.GetItemHandles(items, clientHandles, out serverHandles, out err);
+                        if (HRESULTS.Failed(rtc))
+                        {
+                            Console.WriteLine("Handle取得失敗。錯誤代碼:0x" + rtc.ToString("X"));
+                            return;
+                        }
+
+                        //aggregates 取得
+                       
+                        int[] aggrID;
+                        string[] aggrName;
+                        string[] aggrDesc;
+                        rtc = OpcSrv.GetAggregates(out aggrID, out aggrName, out aggrDesc);
+                        if (HRESULTS.Failed(rtc))
+                        {
+                            MessageBox.Show("Handle取得失敗。錯誤代碼:0x" + rtc.ToString("X"));
+                            return;
+                        }
+                        
+
+                        // 讀取
+                        //int[] aggregates = new int[1] { aggr }; //指定function
+
+                        int[] aggregates = new int[nodes.Count];
+                        for (int i = 0; i < aggregates.Length; i++)
+                        {
+                            aggregates[i] = aggr;
+                        }
+           
+
+                        OPCHDAitem[] values;
+                        TimeSpan resamp = TimeSpan.FromSeconds(Convert.ToInt32(timeInterval.Value));
+
+                        rtc = OpcSrv.ReadProcessed(startTime, stopTime, resamp, serverHandles, aggregates, out values, out err);
+                        if (HRESULTS.Failed(rtc))
+                        {
+                            MessageBox.Show("Handle取得失敗。錯誤代碼:0x" + rtc.ToString("X"));
+                            return;
+                        }
+
+                        // 寫入Excel
+                      
+                        int arraylen = values[0].DataValues.Length;
+
+                        for (int i = 0; i<arraylen;i++)
+                        {
+                            sw.Write(values[0].TimeStamps[i].AddHours(8).ToString() + ",");
+
+                            for (int j = 0; j< values.Length;j++)
+                            {
+                                if (values[j].DataValues[i] == null)
+                                {
+                                    sw.Write("null" + ",");
+                                }
+                                else
+                                {
+                                    sw.Write(values[j].DataValues[i].ToString() + ",");
+                                }
+                            }
+                         
+                            sw.Write("\n");
+                        }
+                        sw.Close();
+                        tbStatus.Text = "匯出完成";
+                    }
+                    else
+                    {
+                        tbStatus.Text = "匯出作業取消";
+                    }
+                }
+            }
+        }
+
+
     }
 }
